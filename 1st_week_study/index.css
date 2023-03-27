@@ -811,3 +811,116 @@ table {
     font-weight: 400;
     color: rgb(34, 34, 34);
 }
+
+#totalfooter {
+    border-top: 1px solid #DDDDDD;
+    width: 1511px;
+    height: 89px;
+    /* border: 1px solid black; */
+}
+
+#footer {
+    width: 1511px;
+    height: 47px;
+    /* border: 1px solid red; */
+}
+
+#secondfooter {
+    width: 1511px;
+    height: 41px;
+    /* border: 1px solid green; */
+}
+
+#footercontent {
+    width: 1352px;
+    height: 20px;
+    padding-top: 13px;
+    padding-bottom: 14px;
+    padding-left: 80px;
+    padding-right: 80px;
+    /* border: 1px solid blue; */
+    display: flex;
+}
+
+#footerleftcontent {
+    width: 621px;
+    height: 20px;
+    /* border: 1px solid brown; */
+    display: flex;
+    align-items: center;
+}
+
+#footerrightcontent {
+    width: 295px;
+    height: 20px;
+    /* border: 1px solid orange; */
+    display: flex;
+}
+
+#footerblank {
+    width: 438px;
+    height: 20px;
+    /* border: 1px solid pink; */
+}
+
+#paddingbox {
+    width: 1352px;
+    height: 6px;
+    border-top: 1px solid #DDDDDD;
+    margin: 0 auto;
+}
+
+#secondfootercontent {
+    width: 1352px;
+    height: 33px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 8px;
+    /* padding-top: 8px; */
+    /* border: 1px solid aquamarine; */
+    font-size: 10px;
+    color: #717171;
+    line-height: 14px;
+}
+
+#text {
+    line-height: 20px;
+    font-size: 14px;
+    color: #222222;
+}
+
+#countrycontrol {
+    /* border: 1px solid rgb(255, 127, 234); */
+    width: 161px;
+    height: 18px;
+    display: flex;
+}
+
+#languagebutton {
+    width: 92px;
+    height: 18px;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    display: flex;
+    padding: 0px;
+    line-height: 18px;
+}
+
+#wonbutton {
+    width: 54px;
+    height: 18px;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    display: flex;
+    padding: 0px;
+    line-height: 18px;
+}
+
+#supportbutton {
+    display: flex;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    padding: 0px;
+    line-height: 20px;
+    padding-left: 10px;
+}
