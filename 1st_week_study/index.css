@@ -718,8 +718,8 @@ table {
 
 #mainpage {
     width: 1352px;
-    height: 2000px;
-    border: 1px solid black;
+    height: 2180px;
+    /* border: 1px solid black; */
     margin-top: 20px;
     margin-bottom: 20px;
     padding-left: 80px;
@@ -729,7 +729,7 @@ table {
 #imageframe {
     width: 320px;
     height: 304px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     border-radius: 12px;
     overflow: hidden;
     display: flex;
@@ -739,29 +739,38 @@ table {
     margin-bottom: 12px;
 }
 
+#imageframe img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
 #content_left {
     width: 320px;
     height: 404px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: inline-block;
     padding-right: 8px;
+    margin-bottom: 30px;
 }
 
 #content_center {
     width: 320px;
     height: 404px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: inline-block;
     padding-left: 8px;
     padding-right: 8px;
+    margin-bottom: 30px;
 }
 
 #content_right {
     width: 320px;
     height: 404px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: inline-block;
     padding-left: 8px;
+    margin-bottom: 30px;
 }
 
 #price {
