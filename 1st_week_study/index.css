@@ -221,9 +221,14 @@ table {
 #sideTab a:focus { text-decoration: none; }
 #sideTab a:hover, a:active { text-decoration: none; }
 
-
-#secondheader {
+.headerfixed {
     padding-top: 20px;
+    height: 78px;
+    width: 1512px;
+    display: flex;
+}
+
+.headerscrolled {
     height: 78px;
     width: 1512px;
     display: flex;
@@ -923,4 +928,24 @@ table {
     padding: 0px;
     line-height: 20px;
     padding-left: 10px;
+}
+
+#totalheader {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+}
+
+#totalheaderwrapper {
+    height: 180px;
+}
+
+#totalfooter {
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+}
+
+#totalfooterwrapper {
+    height: 90px;
 }
