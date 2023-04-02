@@ -172,7 +172,7 @@ h1 {
 	align-items: center;
 }
 
-#emailinput {
+#emailinput, #emailinput2 {
 	width: 422px;
 	height: 56px;
 	border: 1px solid rgba(128,128,128,0.7);
@@ -183,7 +183,7 @@ h1 {
 	padding-left: 10px;
 }
 
-#emailbutton {
+#emailbutton, #emailbutton2 {
 	width: 147px;
 	height: 56px;
 	font-size: 1.5rem;
@@ -426,7 +426,7 @@ h2 {
 	/* border: 1px solid firebrick; */
 }
 
-#textblock {
+#textblock, #textblock1, #textblock2, #textblock3, #textblock4, #textblock5, #textblock6 {
 	width: 1164px;
 	height: 21px;
 	/* border: 1px solid green; */
@@ -507,7 +507,7 @@ h2 {
 #minianimation {
 	width: 48px;
 	height: 60px;
-	border: 1px solid whitesmoke;
+	/* border: 1px solid whitesmoke; */
 	background: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif') center center no-repeat;
 	background-size: 100%;
 }
