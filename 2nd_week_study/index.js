@@ -5,7 +5,6 @@ function handleLanguageChange1() {
     console.log(selectValue);
 
     if (selectValue === "ENG") {
-        console.log("영어입니다.");
         document.getElementById("selectlanguage2").selectedIndex = 1;
         document.getElementById("back1").src = "https://assets.nflxext.com/ffe/siteui/vlv3/2e884ce2-da1c-4501-ab9a-10c534d30975/fcdbcd90-f133-4081-ac82-34918f18aabf/KR-en-20230327-popsignuptwoweeks-perspective_alpha_website_small.jpg";
         document.getElementById("loginbutton").innerHTML = "Sign In";
@@ -75,7 +74,6 @@ function handleLanguageChange1() {
         document.getElementById("textblock6").innerHTML = "Hosted by: Amazon Web Services Inc.";
         document.getElementById("kftc").innerHTML = "KFTC website";
     } else {
-        console.log("한국어입니다.");
         location.reload();
     }
 }
@@ -87,7 +85,6 @@ function handleLanguageChange2() {
     console.log(selectValue2);
 
     if (selectValue2 === "ENG") {
-        console.log("영어입니다.");
         document.getElementById("selectlanguage").selectedIndex = 1;
         document.getElementById("loginbutton").innerHTML = "Sign In";
         document.getElementById("maincontainertext").innerHTML = "Unlimited movies, TV shows, and more.";
@@ -156,7 +153,6 @@ function handleLanguageChange2() {
         document.getElementById("textblock6").innerHTML = "Hosted by: Amazon Web Services Inc.";
         document.getElementById("kftc").innerHTML = "KFTC website";
     } else {
-        console.log("한국어입니다.");
         location.reload();
     }
 }
@@ -181,7 +177,6 @@ function handleButton1Click() {
     var content7 = document.getElementById("hiddenlistcontent7");
 
     if (content1.style.display === "none") {
-        console.log("안 보여요!");
         content1.style.display = "block";
         content2.style.display = "none";
         content3.style.display = "none";
@@ -191,7 +186,6 @@ function handleButton1Click() {
         content7.style.display = "none";
         increaseDivSize();
     } else {
-        console.log("보여요!");
         content1.style.display = "none";
         decreaseDivSize();
     }
@@ -207,7 +201,6 @@ function handleButton2Click() {
     var content7 = document.getElementById("hiddenlistcontent7");
 
     if (content2.style.display === "none") {
-        console.log("안 보여요!");
         content2.style.display = "block";
         content1.style.display = "none";
         content3.style.display = "none";
@@ -217,7 +210,6 @@ function handleButton2Click() {
         content7.style.display = "none";
         increaseDivSize();
     } else {
-        console.log("보여요!");
         content2.style.display = "none";
         decreaseDivSize();
     }
@@ -233,7 +225,6 @@ function handleButton3Click() {
     var content7 = document.getElementById("hiddenlistcontent7");
 
     if (content3.style.display === "none") {
-        console.log("안 보여요!");
         content3.style.display = "block";
         content1.style.display = "none";
         content2.style.display = "none";
@@ -243,7 +234,6 @@ function handleButton3Click() {
         content7.style.display = "none";
         increaseDivSize();
     } else {
-        console.log("보여요!");
         content3.style.display = "none";
         decreaseDivSize();
     }
@@ -259,7 +249,6 @@ function handleButton4Click() {
     var content7 = document.getElementById("hiddenlistcontent7");
 
     if (content4.style.display === "none") {
-        console.log("안 보여요!");
         content4.style.display = "block";
         content1.style.display = "none";
         content2.style.display = "none";
@@ -269,7 +258,6 @@ function handleButton4Click() {
         content7.style.display = "none";
         increaseDivSize();
     } else {
-        console.log("보여요!");
         content4.style.display = "none";
         decreaseDivSize();
     }
@@ -285,7 +273,6 @@ function handleButton5Click() {
     var content7 = document.getElementById("hiddenlistcontent7");
 
     if (content5.style.display === "none") {
-        console.log("안 보여요!");
         content5.style.display = "block";
         content1.style.display = "none";
         content2.style.display = "none";
@@ -295,7 +282,6 @@ function handleButton5Click() {
         content7.style.display = "none";
         increaseDivSize();
     } else {
-        console.log("보여요!");
         content5.style.display = "none";
         decreaseDivSize();
     }
@@ -311,7 +297,6 @@ function handleButton6Click() {
     var content7 = document.getElementById("hiddenlistcontent7");
 
     if (content6.style.display === "none") {
-        console.log("안 보여요!");
         content6.style.display = "block";
         content1.style.display = "none";
         content2.style.display = "none";
@@ -321,7 +306,6 @@ function handleButton6Click() {
         content7.style.display = "none";
         increaseDivSize();
     } else {
-        console.log("보여요!");
         content6.style.display = "none";
         decreaseDivSize();
     }
@@ -337,7 +321,6 @@ function handleButton7Click() {
     var content7 = document.getElementById("hiddenlistcontent7");
 
     if (content7.style.display === "none") {
-        console.log("안 보여요!");
         content7.style.display = "block";
         content1.style.display = "none";
         content2.style.display = "none";
@@ -347,7 +330,6 @@ function handleButton7Click() {
         content6.style.display = "none";
         increaseDivSize();
     } else {
-        console.log("보여요!");
         content7.style.display = "none";
         decreaseDivSize();
     }
