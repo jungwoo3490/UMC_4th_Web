@@ -270,6 +270,7 @@ h2 {
 #listcontainer {
 	width: 1512px;
 	height: 877px;
+	/* height: 1027px; */
 	padding-top: 72px;
 	padding-bottom: 72px;
 	background-color: black;
@@ -287,6 +288,7 @@ h2 {
 #listdiv {
 	width: 1164px;
 	height: 660px;
+	/* height: 830px; */
 	margin-top: 24px;
 	/* border: 1px solid yellow; */
 }
@@ -302,9 +304,15 @@ h2 {
 	display: flex;
 	align-items: center;
 	background-color: rgba(45, 45, 45, 1);
+	margin-bottom: 1px;
+	transition: background-color 0.5s ease;
 }
 
-#listbutton {
+#listcontent:hover {
+	background-color: rgb(93, 91, 91);
+}
+
+#listbutton1, #listbutton2, #listbutton3, #listbutton4,#listbutton5, #listbutton6, #listbutton7 {
 	margin: 0px;
 	width: 1164px;
 	height: 36px;
@@ -319,7 +327,7 @@ h2 {
 	justify-content: space-between;
 } 
 
-#listbutton span {
+#watchcontenttext, #whattext, #costtext, #adstext, #wheretext, #canceltext, #kidstext {
 	font-size: 1.5rem;
 	font-weight: 400;
 }
@@ -510,4 +518,109 @@ h2 {
 	/* border: 1px solid whitesmoke; */
 	background: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif') center center no-repeat;
 	background-size: 100%;
+}
+
+#hiddenlistcontent1 {
+	width: 1116px;
+	height: 126px;
+	padding: 24px;
+	background-color: rgb(45, 45, 45);
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: left;
+	word-break: keep-all;
+	line-height: 1.3;
+}
+
+#hiddenlistcontent1 a {
+	text-decoration: underline;
+}
+
+#hiddenlistcontent2 {
+	width: 1116px;
+	height: 157px;
+	padding: 24px;
+	background-color: rgb(45, 45, 45);
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: left;
+	word-break: keep-all;
+	line-height: 1.3;
+	display: none;
+}
+
+#hiddenlistcontent3 {
+	width: 1116px;
+	height: 63px;
+	padding: 24px;
+	background-color: rgb(45, 45, 45);
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: left;
+	word-break: keep-all;
+	line-height: 1.3;
+	display: none;
+}
+
+#hiddenlistcontent4 {
+	width: 1116px;
+	height: 95px;
+	padding: 24px;
+	background-color: rgb(45, 45, 45);
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: left;
+	word-break: keep-all;
+	line-height: 1.3;
+	display: none;
+}
+
+#hiddenlistcontent4 a {
+	text-decoration: underline;
+}
+
+#hiddenlistcontent5 {
+	width: 1116px;
+	height: 95px;
+	padding: 24px;
+	background-color: rgb(45, 45, 45);
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: left;
+	word-break: keep-all;
+	line-height: 1.3;
+	display: none;
+}
+
+#hiddenlistcontent6 {
+	width: 1116px;
+	height: 63px;
+	padding: 24px;
+	background-color: rgb(45, 45, 45);
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: left;
+	word-break: keep-all;
+	line-height: 1.3;
+	display: none;
+}
+
+#hiddenlistcontent7 {
+	width: 1116px;
+	height: 157px;
+	padding: 24px;
+	background-color: rgb(45, 45, 45);
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: left;
+	word-break: keep-all;
+	line-height: 1.3;
+	display: none;
 }
