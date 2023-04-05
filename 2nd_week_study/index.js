@@ -72,7 +72,6 @@ function handleLanguageChange1() {
     var langSelect = document.getElementById("selectlanguage");
 
     var selectValue = langSelect.value;
-    console.log(selectValue);
 
     if (selectValue === "ENG") {
         document.getElementById("selectlanguage2").selectedIndex = 1;
@@ -87,7 +86,6 @@ function handleLanguageChange2() {
     var langSelect2 = document.getElementById("selectlanguage2");
 
     var selectValue2 = langSelect2.value;
-    console.log(selectValue2);
 
     if (selectValue2 === "ENG") {
         document.getElementById("selectlanguage").selectedIndex = 1;
