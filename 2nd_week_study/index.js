@@ -123,13 +123,6 @@ function hideDivisionAll() {
     content7.style.display = "none";
 }
 
-function changesvgtox() {
-}
-
-function changesvgtoplus() {
-    
-}
-
 function handleButton1Click() {
     var content1 = document.getElementById("hiddenlistcontent1");
 
