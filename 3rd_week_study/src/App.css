@@ -215,7 +215,7 @@ h1 {
 	align-items: center;
 }
 
-#subcontainer {
+.ImageTextContainer, .VideoTextContainer {
 	width: 1512px;
 	height: 436px;
 	padding-top: 72px;
@@ -232,14 +232,14 @@ h1 {
 	align-items: center;
 }
 
-#subcontainertextwrapper {
+.TextBox {
 	width: 576px;
 	height: 166px;
 	padding: 6px;
 	flex-basis: 50%;
 }
 
-#subcontainertextwrapper p {
+.TextBox p {
 	line-height: 1.3;
 }
 
@@ -251,14 +251,20 @@ h2 {
 	word-break: keep-all;
 }
 
-#subcontainerimagewrapper {
+.VideoBox, .ImageBox {
 	width: 581px;
 	height: 432px;
 	position: relative;
 	z-index: 1;
 }
 
-#subcontainerimagewrapper img {
+.VideoBox img {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+
+.ImageBox img {
 	width: 100%;
 	height: 100%;
 	object-fit: fill;
