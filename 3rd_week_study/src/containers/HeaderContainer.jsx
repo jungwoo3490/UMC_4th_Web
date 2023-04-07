@@ -10,7 +10,6 @@ const HeaderContainer = () => {
             <HeaderScreen />
         </div>
     );
-
 };
 
 export default HeaderContainer;
