@@ -1,5 +1,6 @@
 import HeaderContainer from "../containers/HeaderContainer";
 import ImageTextContainer from "../containers/ImageTextContainer";
+import QuestionListContainer from "../containers/QuestionListContainer";
 import VideoTextContainer from "../containers/VideoTextContainer";
 
 const KoreanPage = () => {
@@ -46,6 +47,7 @@ const KoreanPage = () => {
             <VideoTextContainer {...container2}/>
             <ImageTextContainer {...container3}/>
             <ImageTextContainer {...container4}/>
+            <QuestionListContainer />
         </div>
     );
 };
