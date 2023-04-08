@@ -280,7 +280,7 @@ h2 {
 	overflow: hidden;
 }
 
-#listcontainer {
+.QuestionListContainer {
 	width: 1512px;
 	height: 877px;
 	padding-top: 72px;
@@ -320,7 +320,7 @@ h2 {
 	background-color: rgb(93, 91, 91);
 }
 
-#listbutton1, #listbutton2, #listbutton3, #listbutton4,#listbutton5, #listbutton6, #listbutton7 {
+.listbutton {
 	margin: 0px;
 	width: 1164px;
 	height: 36px;
@@ -513,7 +513,7 @@ h2 {
 	background-size: 100%;
 }
 
-#hiddenlistcontent1 {
+.hiddenlistcontent1 {
 	width: 1116px;
 	height: 126px;
 	padding: 24px;
@@ -526,11 +526,11 @@ h2 {
 	line-height: 1.3;
 }
 
-#hiddenlistcontent1 a {
+.hiddenlistcontent1 a {
 	text-decoration: underline;
 }
 
-#hiddenlistcontent2 {
+.hiddenlistcontent2 {
 	width: 1116px;
 	height: 157px;
 	padding: 24px;
@@ -541,10 +541,9 @@ h2 {
 	text-align: left;
 	word-break: keep-all;
 	line-height: 1.3;
-	display: none;
 }
 
-#hiddenlistcontent3 {
+.hiddenlistcontent3 {
 	width: 1116px;
 	height: 63px;
 	padding: 24px;
@@ -555,10 +554,9 @@ h2 {
 	text-align: left;
 	word-break: keep-all;
 	line-height: 1.3;
-	display: none;
 }
 
-#hiddenlistcontent4 {
+.hiddenlistcontent4 {
 	width: 1116px;
 	height: 95px;
 	padding: 24px;
@@ -569,14 +567,13 @@ h2 {
 	text-align: left;
 	word-break: keep-all;
 	line-height: 1.3;
-	display: none;
 }
 
-#hiddenlistcontent4 a {
+.hiddenlistcontent4 a {
 	text-decoration: underline;
 }
 
-#hiddenlistcontent5 {
+.hiddenlistcontent5 {
 	width: 1116px;
 	height: 95px;
 	padding: 24px;
@@ -587,10 +584,9 @@ h2 {
 	text-align: left;
 	word-break: keep-all;
 	line-height: 1.3;
-	display: none;
 }
 
-#hiddenlistcontent6 {
+.hiddenlistcontent6 {
 	width: 1116px;
 	height: 63px;
 	padding: 24px;
@@ -601,10 +597,9 @@ h2 {
 	text-align: left;
 	word-break: keep-all;
 	line-height: 1.3;
-	display: none;
 }
 
-#hiddenlistcontent7 {
+.hiddenlistcontent7 {
 	width: 1116px;
 	height: 157px;
 	padding: 24px;
@@ -615,5 +610,4 @@ h2 {
 	text-align: left;
 	word-break: keep-all;
 	line-height: 1.3;
-	display: none;
 }
