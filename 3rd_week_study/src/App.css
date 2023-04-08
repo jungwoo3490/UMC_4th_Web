@@ -340,7 +340,7 @@ h2 {
 	font-weight: 400;
 }
 
-#lastpage {
+.FooterContainer {
 	width: 1512px;
 	height: 634px;
 	background-color: black;
@@ -380,20 +380,20 @@ h2 {
 	margin-bottom: 12px;
 }
 
-#row {
+.TableRow {
 	width: 1164px;
 	height: 21px;
 	margin-bottom: 13px;
 	display: flex;
 }
 
-#sideitem {
+.sideitem {
 	width: 380px;
 	height: 21px;
 	line-height: 21px;
 }
 
-#centeritem {
+.centeritem {
 	width: 380px;
 	height: 21px;
 	line-height: 21px;
@@ -401,7 +401,7 @@ h2 {
 	margin-right: 12px;
 }
 
-#sideitem a,  #centeritem a {
+.sideitem a,  .centeritem a {
 	font-size: 0.875rem;
 	font-weight: 400;
 	color: rgba(255, 255, 255, 0.7);
