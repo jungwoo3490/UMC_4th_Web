@@ -1,3 +1,4 @@
+import FooterContainer from "../containers/FooterContainer";
 import HeaderContainer from "../containers/HeaderContainer";
 import ImageTextContainer from "../containers/ImageTextContainer";
 import QuestionListContainer from "../containers/QuestionListContainer";
@@ -48,6 +49,7 @@ const KoreanPage = () => {
             <ImageTextContainer {...container3}/>
             <ImageTextContainer {...container4}/>
             <QuestionListContainer />
+            <FooterContainer />
         </div>
     );
 };
