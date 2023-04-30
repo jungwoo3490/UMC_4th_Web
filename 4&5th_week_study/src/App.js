@@ -4,15 +4,21 @@ import React, { useState } from "react";
 import KoreanPage from './pages/KoreanPage';
 import LoginPage from './pages/LoginPage';
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 function App() {
 
   const [language, setLanguage] = useState("KOR");
 
   return (
-
-    <div className="App">
-      <LoginPage />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route path='/' element={<KoreanPage/>} />
+          <Route path='/login' element={<LoginPage/>} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
