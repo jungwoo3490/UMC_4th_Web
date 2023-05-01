@@ -123,6 +123,7 @@ select:focus {
 	text-align: center;
 	line-height: 32px;
 	transition: background-color 0.5s ease;
+	border: none;
 }
 
 #loginbutton:hover {
