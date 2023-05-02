@@ -4,6 +4,8 @@ import ImageTextContainer from "../containers/ImageTextContainer";
 import QuestionListContainer from "../containers/QuestionListContainer";
 import VideoTextContainer from "../containers/VideoTextContainer";
 
+import { useEffect } from "react";
+
 const KoreanPage = () => {
 
     const container1 = {
@@ -39,6 +41,12 @@ const KoreanPage = () => {
         isImageLeft: true,
         type: 1
     };
+
+    useEffect(() => {
+        const titleElement = document.getElementsByTagName("title")[0];
+        titleElement.innerHTML = "넷플릭스 메인페이지";
+        console.log("MainPage Mount!");
+    }, []);
 
 
     return (
