@@ -1,0 +1,755 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.HeaderScreen {
+    width: 1512px;
+    height: 700px;
+	overflow: hidden;
+	border-bottom: 0.5rem solid rgb(35,35,35);
+}
+
+#back1 {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transform: scale(1.25) translateY(-10%);
+}
+#backcon {
+	width: 100%;
+	height: 700px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#all {
+	width: 1512px;
+	height: 4000px;
+}
+
+.HeaderBar {
+	width: 1512px;
+	height: 86px;
+	position: absolute;
+	top: 0;
+	z-index: 2;
+}
+
+#topbar {
+	width: 1164px;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+select:focus {
+	outline: none;
+}
+
+.LanguageButton {
+	width: 126px;
+	height: 32px;
+	border: 1px solid rgba(128,128,128,0.7);
+	border-radius: 0.25rem;
+	display: flex;
+	align-items: center;
+}
+
+#iconbox {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#loginbutton {
+	width: 68px;
+	height: 32px;
+	margin-left: 24px;
+	border-radius: 0.25rem;	
+	color: white;
+	background-color: red;
+	font-size: 0.875rem;
+	font-weight: 500;
+	text-align: center;
+	line-height: 32px;
+	transition: background-color 0.5s ease;
+	border: none;
+}
+
+#loginbutton:hover {
+	background-color: rgb(194, 5, 5);
+}
+
+a { text-decoration: none; color: white;}
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+
+.HeaderBox {
+	width: 741px;
+	height: 236px;
+	position: absolute;
+	top: 34%;
+	left: 26%;
+	z-index: 2;
+	text-align: center;
+}
+
+h1 {
+	color: white;
+	font-size: 3rem;
+	font-weight: 900;
+	margin: 0px;
+}
+
+#maininnercontainer {
+	width: 100%;
+	height: 102px;
+	margin-top: 30px;
+}
+
+#maininnerdiv {
+	width: 680px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.EmailBox {
+	width: 586px;
+	height: 56px;
+	margin-left: 45px;
+	margin-right: 45px;
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+}
+
+#emailinput, #emailinput2 {
+	width: 422px;
+	height: 56px;
+	border: 1px solid rgba(128,128,128,0.7);
+	border-radius: 0.25rem;
+	background: rgba(22, 22, 22, 0.7);
+	font-size: 1rem;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 10px;
+}
+
+#emailbutton, #emailbutton2 {
+	width: 147px;
+	height: 56px;
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: white;
+	background-color: red;
+	border: none;
+	border-radius: 0.25rem;
+	margin-left: 8px;
+	display: flex;
+	align-items: center;
+	transition: background-color 0.5s ease;
+	cursor: pointer;
+}
+
+#emailbutton:hover {
+	background-color: rgb(194, 5, 5);
+}
+
+#emailbutton2:hover {
+	background-color: rgb(194, 5, 5);
+}
+
+#buttontext {
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+.ImageTextContainer, .VideoTextContainer {
+	width: 1512px;
+	height: 436px;
+	padding-top: 72px;
+	padding-bottom: 72px;
+	background-color: black;
+	border-bottom: 0.5rem solid rgb(35,35,35);
+}
+
+.subcontainerwrapper {
+	width: 1164px;
+	height: 436px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+.TextBox {
+	width: 576px;
+	height: 166px;
+	padding: 6px;
+	flex-basis: 50%;
+}
+
+.TextBox p {
+	line-height: 1.3;
+}
+
+h2 {
+	color: white;
+	font-size: 3rem;
+	font-weight: 900;
+	margin: 0px;
+	word-break: keep-all;
+}
+
+.VideoBox, .ImageBox {
+	width: 581px;
+	height: 432px;
+	position: relative;
+	z-index: 1;
+}
+
+.VideoBox img {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+
+.ImageBox img {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+
+#videocontainer {
+	width: 420px;
+	height: 235px;
+	position: absolute;
+	top: 21%;
+	left: 13%;
+	z-index: -1;
+	overflow: hidden;
+}
+
+.QuestionListContainer {
+	width: 1512px;
+	height: 877px;
+	padding-top: 72px;
+	padding-bottom: 72px;
+	background-color: black;
+	border-bottom: 0.5rem solid rgb(35,35,35);
+	text-align: center;
+}
+
+#innercontainer {
+	width: 1164px;
+	height: 877px;
+	margin: 0 auto;
+}
+
+#listdiv {
+	width: 1164px;
+	height: 660px;
+	margin-top: 24px;
+}
+
+#listdiv li {
+	margin-bottom: 8px;
+}
+
+#listcontent {
+	width: 1164px;
+	height: 84px;
+	display: flex;
+	align-items: center;
+	background-color: rgba(45, 45, 45, 1);
+	margin-bottom: 1px;
+	transition: background-color 0.5s ease;
+}
+
+#listcontent:hover {
+	background-color: rgb(93, 91, 91);
+}
+
+.listbutton {
+	margin: 0px;
+	width: 1164px;
+	height: 36px;
+	padding: 24px;
+	display: flex;
+	align-items: center;
+	appearance: none;
+	border: none;
+	background: none;
+	color: rgb(255,255,255);
+	cursor: pointer;
+	justify-content: space-between;
+} 
+
+#watchcontenttext, #whattext, #costtext, #adstext, #wheretext, #canceltext, #kidstext {
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.FooterContainer {
+	width: 1512px;
+	height: 634px;
+	background-color: black;
+}
+
+#lastpagewrapper {
+	width: 1164px;
+	height: 514px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	margin: 0 auto;
+}
+
+#footercontainer1 {
+	width: 1164px;
+	height: 21px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	color: rgba(255, 255, 255, 0.7);
+	line-height: 21px;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+#footercontainer1 a {
+	font-size: 1rem;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.7);
+	text-decoration: underline;
+}
+
+#footercontainer2 {
+	width: 1164px;
+	height: 153px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	margin-bottom: 12px;
+}
+
+.TableRow {
+	width: 1164px;
+	height: 21px;
+	margin-bottom: 13px;
+	display: flex;
+}
+
+.sideitem {
+	width: 380px;
+	height: 21px;
+	line-height: 21px;
+}
+
+.centeritem {
+	width: 380px;
+	height: 21px;
+	line-height: 21px;
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+.sideitem a,  .centeritem a {
+	font-size: 0.875rem;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.7);
+	text-decoration: underline;
+}
+
+#footercontainer3 {
+	width: 1164px;
+	height: 32px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+#footercontainer4 {
+	width: 1164px;
+	height: 18px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 0.875rem;
+	line-height: 18px;
+}
+
+#footercontainer5 {
+	width: 1164px;
+	height: 146px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+#textblock, #textblock1, #textblock2, #textblock3, #textblock4, #textblock5, #textblock6 {
+	width: 1164px;
+	height: 21px;
+	color: rgba(255, 255, 255, 0.7);
+	line-height: 21px;
+}
+
+#textblock a {
+	font-size: 0.75rem;
+	color: rgba(255, 255, 255, 0.7);
+	text-decoration: underline;
+}
+
+#videocontainer2 {
+	width: 363px;
+	height: 205px;
+	position: absolute;
+	top: 10%;
+	left: 18%;
+	z-index: -1;
+	overflow: hidden;
+}
+
+#saveblock {
+	width: 288px;
+	height: 76px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 12px;
+	padding-right: 12px;
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	background: rgba(0, 0, 0, 1);
+	display: flex;
+	position: absolute;
+	left: 23%;
+	bottom: 7%;
+	z-index: 1;
+	overflow: hidden;
+	box-shadow: 0 0 2em 0 rgba(0, 0, 0, 1);
+	border-radius: 0.75rem;
+	align-items: center;
+}
+
+#miniimage {
+	width: 52px;
+	height: 76px;
+	margin-right: 16px;
+}
+
+#minitext {
+	width: 173px;
+	height: 39px;
+}
+
+#moviename {
+	width: 173px;
+	height: 21px;
+	line-height: 21px;
+	font-size: 1rem;
+	font-weight: 500;
+	color: white;
+	display: flex;
+	align-items: center;
+}
+
+#saving {
+	width: 173px;
+	height: 18px;
+	font-size: 0.875rem;
+	font-weight: 400;
+	color: #0071eb;
+	line-height: 18px;
+}
+
+#minianimation {
+	width: 48px;
+	height: 60px;
+	background: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif') center center no-repeat;
+	background-size: 100%;
+}
+
+.hiddenlistcontent1 {
+	width: 1116px;
+	height: 126px;
+	padding: 24px;
+	background-color: rgb(45, 45, 45);
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: left;
+	word-break: keep-all;
+	line-height: 1.3;
+}
+
+.hiddenlistcontent1 a {
+	text-decoration: underline;
+}
+
+.hiddenlistcontent2 {
+	width: 1116px;
+	height: 157px;
+	padding: 24px;
+	background-color: rgb(45, 45, 45);
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: left;
+	word-break: keep-all;
+	line-height: 1.3;
+}
+
+.hiddenlistcontent3 {
+	width: 1116px;
+	height: 63px;
+	padding: 24px;
+	background-color: rgb(45, 45, 45);
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: left;
+	word-break: keep-all;
+	line-height: 1.3;
+}
+
+.hiddenlistcontent4 {
+	width: 1116px;
+	height: 95px;
+	padding: 24px;
+	background-color: rgb(45, 45, 45);
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: left;
+	word-break: keep-all;
+	line-height: 1.3;
+}
+
+.hiddenlistcontent4 a {
+	text-decoration: underline;
+}
+
+.hiddenlistcontent5 {
+	width: 1116px;
+	height: 95px;
+	padding: 24px;
+	background-color: rgb(45, 45, 45);
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: left;
+	word-break: keep-all;
+	line-height: 1.3;
+}
+
+.hiddenlistcontent6 {
+	width: 1116px;
+	height: 63px;
+	padding: 24px;
+	background-color: rgb(45, 45, 45);
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: left;
+	word-break: keep-all;
+	line-height: 1.3;
+}
+
+.hiddenlistcontent7 {
+	width: 1116px;
+	height: 157px;
+	padding: 24px;
+	background-color: rgb(45, 45, 45);
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: left;
+	word-break: keep-all;
+	line-height: 1.3;
+}
+
+
+/* 4주차 미션 스타일링 */
+
+.LoginBox {
+	width: 314px;
+	height: 560px;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	padding-left: 68px;
+	padding-right: 68px;
+	position: absolute;
+	top: 10%;
+	left: 35%;
+	z-index: 2;
+	background-color: rgba(0,0,0,.75);
+}
+
+.mainform {
+	width: 314px;
+	height: 395px;
+	
+}
+
+
+#back2 {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transform: scale(1.25) translateY(-10%);
+}
+#backcon2 {
+	width: 100%;
+	height: 841px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.LoginPageScreen {
+    width: 1512px;
+    height: 841px;
+	overflow: hidden;
+	border-bottom: 0.5rem solid rgb(35,35,35);
+}
+
+.loginform {
+    width: 100%;
+    height: 395px;
+}
+
+.subtext {
+    width: 100%;
+    height: 165px;
+}
+
+.logintext {
+	font-size: 32px;
+	font-weight: 500;
+	margin-bottom: 28px;
+}
+
+.logininputformdiv {
+	width: 314px;
+	height: 50px;
+	padding-bottom: 16px;
+}
+
+.logininputform {
+	width: 314px;
+	height: 50px;
+	border: none;
+	border-radius: 4px;
+	background-color: #333;
+	color: white;
+}
+
+::-webkit-input-placeholder {
+	font-size: 16px;
+  }
+
+.bigloginbutton {
+	width: 314px;
+	height: 50px;
+	border: none;
+	border-radius: 4px;
+	background-color: red;
+	color: white;
+	font-size: 16px;
+	margin-top: 24px;
+	margin-bottom: 12px;
+}
+
+.loginforhelp {
+	width: 100%;
+	height: 19px;
+}
+
+.loginforhelp span {
+	color: #b3b3b3;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.savelogininfo {
+	margin-right: 90px;
+}
+
+.signupnow {
+	width: 100%;
+	height: 21px;
+	margin-top: 16px;
+	color: #737373;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.signupnow a {
+	margin-left: 5px;
+}
+
+.recaptcha {
+	width: 100%;
+	height: 115px;
+	margin-top: 11px;
+}
+
+.recaptcha p {
+	font-size: 13px;
+	word-break: keep-all;
+}
+
+.recaptcha span {
+	color: #8c8c8c;
+}
+
+.recaptcha a {
+	color: #0071eb;
+}
