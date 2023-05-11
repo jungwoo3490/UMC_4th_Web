@@ -1,6 +1,24 @@
 import LanguageButton from "./LanguageButton";
 import { useNavigate } from "react-router-dom";
 
+import { styled } from "styled-components";
+
+
+const LoginButton = styled.button`
+    width: 68px;
+    height: 32px;
+    margin-left: 24px;
+    border-radius: 0.25rem;	
+    color: white;
+    background-color: red;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 32px;
+    transition: background-color 0.5s ease;
+    border: none;
+`;
+
 const HeaderBar = () => {
 
     const navigate = useNavigate();
@@ -15,12 +33,15 @@ const HeaderBar = () => {
                         </g>
                     </svg>
                 </span>
-                <span>
-                    <LanguageButton />
-                </span>
-                <span>
-                    <button id="loginbutton" onClick={() => navigate("/login")}>로그인</button>
-                </span>
+                <div className="subbarwrapper">
+                    <span>
+                        <LanguageButton />
+                    </span>
+                    <span>
+                        {/* <button id="loginbutton" onClick={() => navigate("/login")}>로그인</button> */}
+                        <LoginButton onClick={() => navigate("/login")}>로그인</LoginButton>
+                    </span>
+                </div>
             </div>
         </div>
     );
