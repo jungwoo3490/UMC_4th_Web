@@ -1,4 +1,15 @@
+import { useLocation } from "react-router-dom";
+import { REST_API_KEY, REDIRECT_URI } from "../KakaoLoginData";
+import { useState, conponen } from "react";
+
 const LoginBox = () => {
+
+    const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
+
+    const handleLogin = () => {
+        window.location.href = KAKAO_AUTH_URL;
+    };
+
     return (
         <div className="LoginBox">
             <div className="mainform">
@@ -10,7 +21,7 @@ const LoginBox = () => {
                     <div className="logininputformdiv">
                         <input className="logininputform" type="text" name="" placeholder="비밀번호" />
                     </div>
-                    <button className="bigloginbutton">로그인</button>
+                    <button className="bigloginbutton" onClick={handleLogin}>로그인</button>
                     <div className="loginforhelp">
                         <input type="checkbox" className="logincheckbox" />
                         <span className="savelogininfo">로그인 정보 저장</span>

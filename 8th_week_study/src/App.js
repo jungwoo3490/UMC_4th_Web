@@ -3,6 +3,7 @@ import './App.css';
 import React, { useState } from "react";
 import KoreanPage from './pages/KoreanPage';
 import LoginPage from './pages/LoginPage';
+import KaKaoLoginPage from './pages/KaKaoLoginPage';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path='/' element={<KoreanPage/>} />
           <Route path='/login' element={<LoginPage/>} />
+          <Route path='/kakaoLogin' element={<KaKaoLoginPage/>} />
         </Routes>
       </div>
     </BrowserRouter>
