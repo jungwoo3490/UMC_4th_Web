@@ -1,8 +1,21 @@
-import { useForm } from "react-hook-form";
+import React, { useState } from 'react';
 
+import { useForm } from "react-hook-form";
+import Button from '@mui/material/Button';
+import { useNavigate } from "react-router-dom";
+
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
 
 const SignInPage = () => {
     
+    const navigate = useNavigate();
+
+    const [open, setOpen] = useState(false);
+
     const {
         register,
         formState: {errors},
@@ -37,6 +50,8 @@ const SignInPage = () => {
                             }
                         })} 
                     />
+                    <br/>
+                    <br/>
                     {errors.nickname && <small role="alert">{errors.nickname.message}</small>}
                 </form>
                 <form onSubmit={handleSubmit(onSubmit)}>
@@ -54,6 +69,8 @@ const SignInPage = () => {
                             }
                         })} 
                     />
+                    <br/>
+                    <br/>
                     {errors.email && <small role="alert">{errors.email.message}</small>}
                 </form>
                 <form onSubmit={handleSubmit(onSubmit)}>
@@ -71,6 +88,8 @@ const SignInPage = () => {
                             }
                         })} 
                     />
+                    <br/>
+                    <br/>
                     {errors.password && <small role="alert">{errors.password.message}</small>}
                 </form>
                 <form onSubmit={handleSubmit(onSubmit)}>
@@ -88,6 +107,8 @@ const SignInPage = () => {
                             }
                         })}
                     />
+                    <br/>
+                    <br/>
                     {errors.phone && <small role="alert">{errors.phone.message}</small>}
                 </form>
                 <form onSubmit={handleSubmit(onSubmit)}>
@@ -101,8 +122,29 @@ const SignInPage = () => {
                             required: "생년월일을 선택해주세요.",
                         })}
                     />
+                    <br/>
+                    <br/>
                     {errors.birth && <small role="alert">{errors.birth.message}</small>}
                 </form>
+            </div>
+            <div className="signinbuttoncontainer">
+                <Button variant="outlined" size="large" onClick={() => {
+                    setOpen(true);
+                }}>회원가입</Button>
+                <Dialog open={open}>
+                    <DialogTitle>Create</DialogTitle>
+                    <DialogContent>
+                        <DialogContentText>
+                            회원가입을 축하드립니다!
+                        </DialogContentText>
+                    </DialogContent>
+                    <DialogActions>
+                        <Button variant="outlined" onClick={() => {
+                            setOpen(false);
+                            navigate("/");
+                        }}>확인</Button>
+                    </DialogActions>
+                </Dialog>
             </div>
         </div>
         

@@ -874,7 +874,11 @@ h2 {
 	margin-bottom: 100px;
 }
 .SignInPage form {
-	margin: 70px;
+	width: 500px;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	margin-left: 150px;
+	margin-right: 150px;
 }
 
 .SignInPage label {
@@ -895,4 +899,14 @@ h2 {
 .formbox {
 	margin: 0 auto;
 	width: 800px;
+}
+
+.signinbuttoncontainer {
+	width: 400px;
+	margin: 0 auto;
+}
+
+.signinbuttoncontainer Button {
+	margin-left: 150px;
+	margin-right: 150px;
 }
